@@ -1,17 +1,150 @@
-<form action="https://formsubmit.co/bbook0859@gmail.com" method="POST" class="support-form">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <input type="hidden" name="_subject" value="New B-Book Support Request">
-    <input type="hidden" name="_captcha" value="true">
+    <title>Support | B-Book</title>
 
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name" required>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your email address" required>
+<body>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="6" placeholder="How can we help you?" required></textarea>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">B-Book</a>
 
-    <button type="submit" class="btn">Send Message</button>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="businesses.html">Businesses</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="support.html">Support</a>
+            </nav>
+        </div>
+    </header>
 
-</form>
+
+    <main>
+
+        <section class="page-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <h1>Contact B-Book Support</h1>
+
+                    <p>
+                        Have a question, need assistance, or want to report an issue?
+                        Send us a message and our support team will get back to you.
+                    </p>
+                </div>
+
+
+                <div class="support-form-container">
+
+                    <form action="https://formsubmit.co/bbook0859@gmail.com"
+                          method="POST">
+
+                        <input type="hidden"
+                               name="_subject"
+                               value="New B-Book Support Request">
+
+                        <input type="hidden"
+                               name="_captcha"
+                               value="true">
+
+                        <input type="hidden"
+                               name="_template"
+                               value="table">
+
+
+                        <div class="form-group">
+
+                            <label for="name">Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">Email</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">Message</label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="7"
+                                placeholder="Write your message here..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="btn">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="support-email">
+
+                    <p>
+                        You can also contact us directly at:
+                    </p>
+
+                    <a href="mailto:bbook0859@gmail.com">
+                        bbook0859@gmail.com
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <p>© 2026 B-Book. All rights reserved.</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
