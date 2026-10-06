@@ -42,12 +42,17 @@
     }
 
     .logo {
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      color: #ffffff;
-      text-decoration: none;
-    }
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  display: block;
+}
 
     nav {
       display: flex;
@@ -179,7 +184,9 @@
 <header>
   <div class="header-content">
 
-    <a href="index.html" class="logo">B-Book</a>
+    <a href="index.html" class="logo">
+  <img src="bbook-logo.png" alt="B-Book Logo">
+</a>
 
     <nav>
       <a href="index.html">Home</a>
