@@ -1,17 +1,570 @@
+```html
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy Policy | B-Book</title><link rel="stylesheet" href="css/style.css"></head>
-<body><header class="nav"><a class="brand" href="index.html"><span class="brand-mark">B</span>B-Book</a><nav><a href="index.html">Home</a><a href="support.html">Support</a></nav></header>
-<main class="legal"><div class="eyebrow">LEGAL</div><h1>Privacy Policy</h1><p class="updated">Last updated: October 5, 2026</p>
-<p>This Privacy Policy explains how B-Book may collect, use, store and protect information when you use the B-Book application and website.</p>
-<h2>1. Information we may collect</h2><p>Depending on the features you use, B-Book may collect account information such as your name, email address, profile information, business information, content you choose to upload, messages, and information needed to provide app functionality.</p>
-<h2>2. Device and usage information</h2><p>We may process technical information such as device type, operating system, app version, language, approximate location when a location feature is enabled, and usage or diagnostic information.</p>
-<h2>3. How information is used</h2><p>Information may be used to provide and improve B-Book, operate accounts, display relevant business content, enable communication, maintain security, prevent abuse, provide support, and comply with legal obligations.</p>
-<h2>4. Location</h2><p>Location features are used only when enabled or otherwise permitted by the device and applicable permissions. You can control location permissions through your device settings.</p>
-<h2>5. Sharing</h2><p>We do not sell personal information. Information may be shared with service providers that help operate the app, when required by law, or when necessary to protect users and the service.</p>
-<h2>6. Security</h2><p>We use reasonable technical and organizational measures designed to protect information. No internet service can guarantee absolute security.</p>
-<h2>7. Children's privacy</h2><p>B-Book is not intended for children under the minimum age required by applicable law. If you believe a child has provided personal information, contact us so it can be reviewed.</p>
-<h2>8. Your choices</h2><p>You may review or update certain account information through the app. You may also request account deletion using our <a href="delete-account.html">Delete Account</a> page.</p>
-<h2>9. Changes</h2><p>We may update this policy from time to time. The updated version will be posted on this page with a new effective date.</p>
-<h2>10. Contact</h2><p>For privacy questions or requests, visit <a href="support.html">B-Book Support</a>.</p>
-<div class="notice">Important: Before publishing, replace the generic wording and support details with your actual data practices, legal entity name and contact email. Your Play Console Data Safety form should match what the app actually collects and shares.</div>
-</main><footer><p>© 2026 B-Book.</p></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy Policy | B-Book</title>
+
+  <meta name="description" content="B-Book Privacy Policy. Learn how B-Book collects, uses, protects, and manages information when you use the B-Book application and website.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0f;
+      color: #e8e8ed;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #111116;
+      border-bottom: 1px solid #25252d;
+      padding: 22px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-content {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #bdbdc7;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 22px 70px;
+    }
+
+    .hero {
+      margin-bottom: 42px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .updated {
+      color: #9999a5;
+      font-size: 14px;
+    }
+
+    section {
+      margin-bottom: 34px;
+    }
+
+    h2 {
+      color: #ffffff;
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #c9c9d1;
+      font-size: 16px;
+      margin-bottom: 13px;
+    }
+
+    ul {
+      margin: 10px 0 15px 25px;
+      color: #c9c9d1;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .notice {
+      background: #15151c;
+      border: 1px solid #292933;
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 15px;
+    }
+
+    footer {
+      border-top: 1px solid #25252d;
+      background: #111116;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      color: #888894;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    footer a {
+      color: #aaaab5;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        position: static;
+      }
+
+      .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      p,
+      li {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-content">
+
+    <a href="index.html" class="logo">B-Book</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="businesses.html">Businesses</a>
+      <a href="support.html">Support</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: October 5, 2026</p>
+  </div>
+
+  <section>
+    <p>
+      B-Book ("B-Book", "we", "us", or "our") respects your privacy.
+      This Privacy Policy explains how information may be collected,
+      used, stored, protected, and shared when you use the B-Book
+      mobile application and related website.
+    </p>
+
+    <p>
+      By using B-Book, you acknowledge the practices described in this
+      Privacy Policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>1. Information We Collect</h2>
+
+    <p>
+      Depending on the features you use, B-Book may collect information
+      that you provide directly when creating or using an account.
+    </p>
+
+    <p>This may include:</p>
+
+    <ul>
+      <li>Name or display name</li>
+      <li>Email address</li>
+      <li>Account and profile information</li>
+      <li>Business name and business information</li>
+      <li>Business category and description</li>
+      <li>Profile or business images you choose to upload</li>
+      <li>Posts, reels, stories, comments, and other content you submit</li>
+      <li>Messages or other communications sent through B-Book</li>
+      <li>Information you provide when contacting support</li>
+    </ul>
+
+    <p>
+      We collect information that is reasonably necessary to provide
+      the features and services of B-Book.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Device and Technical Information</h2>
+
+    <p>
+      When you use B-Book, certain technical information may be
+      processed automatically to help operate, secure, and improve
+      the application.
+    </p>
+
+    <p>This may include:</p>
+
+    <ul>
+      <li>Device type and model</li>
+      <li>Operating system and version</li>
+      <li>Application version</li>
+      <li>Preferred language or language settings</li>
+      <li>General technical information</li>
+      <li>Diagnostic, crash, and performance information</li>
+      <li>Information about how features of the application are used</li>
+    </ul>
+
+    <p>
+      We use this information primarily for application functionality,
+      troubleshooting, security, performance, and improvement.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. Location Information</h2>
+
+    <p>
+      Some B-Book features may use location-related information when
+      you choose to enable a location feature and provide the required
+      device permission.
+    </p>
+
+    <p>
+      Location-related information may be used to support features such
+      as discovering businesses or displaying location-related business
+      information.
+    </p>
+
+    <p>
+      You can control location permissions through your device settings.
+      If you do not grant location permission, certain location-based
+      features may not work as intended.
+    </p>
+  </section>
+
+  <section>
+    <h2>4. User-Generated Content</h2>
+
+    <p>
+      B-Book allows users and businesses to create and share content.
+      Content that you choose to make available through the application
+      may be visible to other users depending on the feature and your
+      account or privacy settings.
+    </p>
+
+    <p>
+      This may include business profiles, posts, images, videos,
+      reels, stories, comments, and other information that you
+      voluntarily publish.
+    </p>
+
+    <p>
+      Please avoid sharing sensitive personal information publicly
+      through your profile, posts, comments, stories, or other
+      user-generated content.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Messages and Communications</h2>
+
+    <p>
+      If you use B-Book communication features, information contained
+      in messages or communications may be processed as necessary to
+      deliver those features and maintain the security and reliability
+      of the service.
+    </p>
+
+    <p>
+      You should only share information with other users that you are
+      comfortable communicating through the application.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. How We Use Information</h2>
+
+    <p>
+      Information collected through B-Book may be used for purposes
+      including:
+    </p>
+
+    <ul>
+      <li>Creating and managing user accounts</li>
+      <li>Providing B-Book features and services</li>
+      <li>Creating and displaying business profiles</li>
+      <li>Displaying business-related content</li>
+      <li>Enabling communication between users and businesses</li>
+      <li>Providing location-based features when enabled</li>
+      <li>Improving application functionality and performance</li>
+      <li>Detecting and preventing abuse, fraud, spam, and misuse</li>
+      <li>Maintaining the security of accounts and the service</li>
+      <li>Responding to support requests</li>
+      <li>Investigating technical problems</li>
+      <li>Complying with applicable legal requirements</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Sharing of Information</h2>
+
+    <p>
+      We do not sell your personal information.
+    </p>
+
+    <p>
+      Information may be shared or processed in limited circumstances,
+      including:
+    </p>
+
+    <ul>
+      <li>
+        With service providers that help us operate, maintain, secure,
+        or improve B-Book
+      </li>
+      <li>
+        When you choose to make information or content publicly
+        available through B-Book
+      </li>
+      <li>
+        When required by applicable law, legal process, or governmental
+        authority
+      </li>
+      <li>
+        When reasonably necessary to protect the rights, safety,
+        security, or property of users, B-Book, or others
+      </li>
+      <li>
+        In connection with a merger, acquisition, restructuring,
+        financing, or other business transaction, where permitted by law
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Third-Party Services</h2>
+
+    <p>
+      B-Book may rely on third-party services or technology providers
+      to support functions such as authentication, hosting, storage,
+      analytics, security, notifications, application operation, or
+      other technical services.
+    </p>
+
+    <p>
+      These providers may process information on our behalf as
+      necessary to provide their services and subject to their own
+      applicable terms and privacy policies.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Security</h2>
+
+    <p>
+      We use reasonable technical and organizational measures designed
+      to protect information against unauthorized access, alteration,
+      disclosure, loss, or misuse.
+    </p>
+
+    <p>
+      However, no internet transmission, electronic storage system,
+      application, or online service can be guaranteed to be completely
+      secure. Therefore, we cannot guarantee absolute security of
+      information.
+    </p>
+  </section>
+
+  <section>
+    <h2>10. Data Retention</h2>
+
+    <p>
+      We retain information for as long as reasonably necessary to
+      provide B-Book services, maintain security, comply with legal
+      obligations, resolve disputes, enforce our agreements, or fulfill
+      other legitimate purposes.
+    </p>
+
+    <p>
+      When information is no longer reasonably required, it may be
+      deleted, anonymized, or securely disposed of, subject to applicable
+      legal and operational requirements.
+    </p>
+  </section>
+
+  <section>
+    <h2>11. Account Deletion</h2>
+
+    <p>
+      You may request deletion of your B-Book account and associated
+      personal information through our account deletion page.
+    </p>
+
+    <p>
+      Visit:
+      <a href="delete-account.html">Delete Your B-Book Account</a>
+    </p>
+
+    <p>
+      Certain information may need to be retained where required by law,
+      necessary for security, fraud prevention, dispute resolution, or
+      other legitimate legal purposes.
+    </p>
+  </section>
+
+  <section>
+    <h2>12. Your Choices and Rights</h2>
+
+    <p>
+      Depending on your location and applicable law, you may have rights
+      regarding your personal information, including the ability to:
+    </p>
+
+    <ul>
+      <li>Access certain information associated with your account</li>
+      <li>Request correction of inaccurate information</li>
+      <li>Request deletion of your account or personal information</li>
+      <li>Control certain device permissions, including location</li>
+      <li>Contact us regarding privacy-related questions or requests</li>
+    </ul>
+
+    <p>
+      Some requests may require verification to help protect your
+      account and personal information.
+    </p>
+  </section>
+
+  <section>
+    <h2>13. Children's Privacy</h2>
+
+    <p>
+      B-Book is not intended for children below the minimum age required
+      by applicable law.
+    </p>
+
+    <p>
+      If you believe that a child has provided personal information
+      through B-Book in violation of applicable requirements, please
+      contact us. We will review the information and take appropriate
+      action where required.
+    </p>
+  </section>
+
+  <section>
+    <h2>14. International Data Processing</h2>
+
+    <p>
+      Depending on the services and infrastructure used to operate
+      B-Book, information may be processed or stored in countries other
+      than the country where you live.
+    </p>
+
+    <p>
+      Where applicable, we take reasonable steps to handle information
+      in accordance with relevant legal requirements.
+    </p>
+  </section>
+
+  <section>
+    <h2>15. Changes to This Privacy Policy</h2>
+
+    <p>
+      We may update this Privacy Policy from time to time to reflect
+      changes to B-Book, our practices, technology, or applicable legal
+      requirements.
+    </p>
+
+    <p>
+      When we make changes, the updated policy will be posted on this
+      page and the "Last updated" date will be changed accordingly.
+    </p>
+  </section>
+
+  <section>
+    <h2>16. Contact Us</h2>
+
+    <p>
+      If you have questions, concerns, or requests regarding this
+      Privacy Policy or your personal information, please contact
+      B-Book support.
+    </p>
+
+    <div class="notice">
+      <p>
+        <strong>Support email:</strong>
+        <a href="mailto:bbook0859@gmail.com">bbook0859@gmail.com</a>
+      </p>
+
+      <p>
+        You can also visit our
+        <a href="support.html">Support page</a>.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 B-Book. All rights reserved.</p>
+
+  <div>
+    <a href="index.html">Home</a>
+    <a href="businesses.html">Businesses</a>
+    <a href="support.html">Support</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="delete-account.html">Delete Account</a>
+  </div>
+</footer>
+
+</body>
+</html>
+```
